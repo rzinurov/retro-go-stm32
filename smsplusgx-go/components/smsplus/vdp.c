@@ -25,7 +25,7 @@
 #include "shared.h"
 
 /* VDP context */
-vdp_t vdp;
+vdp_t vdp __attribute__((section (".persistent")));
 
 static void viewport_check(void)
 {
