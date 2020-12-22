@@ -305,12 +305,12 @@ void app_main(void)
         if (!app->speedupEnabled)
         {
             // Process audio
-            for (short i = 0; i < snd.sample_count; i++)
+            for (short i = 0; i < sms_snd.sample_count; i++)
             {
-                audioBuffer[i] = snd.output[0][i] << 16 | snd.output[1][i];
+                audioBuffer[i] = sms_snd.output[0][i] << 16 | sms_snd.output[1][i];
             }
 
-            odroid_audio_submit((short*)audioBuffer, snd.sample_count);
+            odroid_audio_submit((short*)audioBuffer, sms_snd.sample_count);
         }
     }
 }
