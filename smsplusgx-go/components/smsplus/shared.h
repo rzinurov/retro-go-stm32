@@ -18,8 +18,7 @@ typedef signed long int int32;
 #include <math.h>
 #include <limits.h>
 //#include <zlib.h>
-//#include <esp_attr.h>
-#include <porting.h>
+#include <esp_attr.h>
 
 #ifndef PATH_MAX
 #ifdef  MAX_PATH
@@ -43,7 +42,7 @@ typedef signed long int int32;
 #include "emu2413.h"
 #include "ym2413.h"
 #include "fmintf.h"
-#include "sms_sound.h"
+#include "sound.h"
 #include "system.h"
 #include "loadrom.h"
 // #include "config.h"

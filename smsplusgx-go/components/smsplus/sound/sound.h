@@ -52,7 +52,7 @@ typedef struct
 
 
 /* Global data */
-extern snd_t sms_snd;
+extern snd_t snd;
 
 /* Function prototypes */
 void psg_write(int data);
@@ -62,7 +62,7 @@ void fmunit_detect_w(int data);
 void fmunit_write(int offset, int data);
 int sound_init(void);
 void sound_shutdown(void);
-void smsplus_sound_reset(void);
+void sound_reset(void);
 void sound_update(int line);
 void sound_mixer_callback(int16 **stream, int16 **output, int length);
 
